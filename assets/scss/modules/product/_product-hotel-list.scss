@@ -1,0 +1,73 @@
+// PRODUCT CONTENT HOTEL LIST
+.product-content__hotel {
+  min-height: 300px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  &--wrap {
+    margin-bottom: 30px;
+  }
+
+  &--img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: $white;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &--date {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    background: #292c33;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  &--title {
+    position: absolute;
+    min-height: 40%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+
+  &--title-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &--title-star {
+    font-size: 0.85rem;
+    color: $orange;
+    margin-bottom: 0.5rem;
+
+    i[class=icon-instar] {
+      color: $gray;
+    }
+  }
+}
+
+// MEDIA
+@media (max-width: $mobile - 1) {
+  .product-content__hotel-single {
+    margin-top: 30px;
+  }
+}

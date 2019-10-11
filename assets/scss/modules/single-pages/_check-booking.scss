@@ -1,0 +1,68 @@
+.check-booking {
+  &__title {
+    background-image: url("/images/check-booking-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (max-width: $mobile - 1) {
+      height: 150px;
+      background-size: cover;
+    }
+  }
+
+  &__content {
+    display: block;
+    position: relative;
+    margin-top: 48px;
+    margin-bottom: 100px;
+
+    &-paragraph {
+      font-family: $primary-font;
+      margin: 0 0 35px 0;
+    }
+  }
+
+  &__content-form {
+    label {
+      font-weight: 700;
+      width: 37%;
+
+      input {
+        margin-top: 0.5rem;
+      }
+    }
+
+    input {
+      border: none;
+      border-bottom: 1px solid $black;
+      border-radius: 0;
+      text-indent: 0.75rem;
+      height: 48px;
+    }
+
+    &--btn {
+      white-space: nowrap;
+      height: 48px;
+      align-self: flex-end;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 1.33;
+      letter-spacing: 2px;
+      padding: 0 1.5rem;
+    }
+  }
+}
+
+// MEDIA
+@media (max-width: $lg) {
+  .check-booking__content-form label {
+    width: auto;
+  }
+}
+
+@media (max-width: $mobile) {
+  .check-booking__content-form--btn {
+    width: 100%;
+  }
+}

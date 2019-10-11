@@ -1,0 +1,24 @@
+.product-itinerary {
+
+  &__item {
+    display: flex;
+    margin-bottom: 70px;
+  }
+
+  &__day {
+    font-size: 14px;
+    flex-grow: 1;
+  }
+
+  &__description {
+    width: 82%;
+    font-size: 18px;
+
+    h2 {
+      font-family: $primary-font;
+      font-size: 24px;
+      font-weight: 900;
+      margin-bottom: 20px;
+    }
+  }
+}

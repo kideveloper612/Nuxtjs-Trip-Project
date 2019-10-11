@@ -1,0 +1,55 @@
+// FORM
+.boka-form {
+  font-size: 14px;
+
+  @media (max-width: $mobile - 1) {
+    margin-top: 27px;
+  }
+
+  input, select {
+    height: 50px;
+    border: 1px solid $table-border-color;
+    width: 100%;
+    padding-left: 14px;
+  }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &::-ms-expand {
+      display: none;
+    }
+  }
+
+  label {
+    color: $table-border-color;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  label[for=eventuell] {
+    @media (max-width: $mobile - 1) {
+      margin-bottom: 0;
+    }
+  }
+
+  & .art-select {
+    margin-top: 0;
+
+    &:after {
+      color: $black;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    max-width: 180px;
+    height: 69px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.33;
+    letter-spacing: 2px;
+  }
+}

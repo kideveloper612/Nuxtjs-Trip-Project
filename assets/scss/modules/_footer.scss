@@ -1,0 +1,135 @@
+.footer {
+  padding-top: 48px;
+  height: 311px;
+  background-color: $black;
+  color: $white;
+  font-size: 0.75rem;
+
+  h4 {
+    font-size: 0.75rem;
+  }
+}
+
+// MENU
+.footer-menu {
+  margin-left: 100px;
+
+  ul {
+    li {
+      a {
+        font-size: 14px;
+        line-height: 1.71;
+        color: $text-gray;
+        transition: 0.2s;
+
+        &:hover {
+          transition: 0.2s;
+          color: $orange;
+        }
+      }
+    }
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+// SUBSCRIBE
+.footer-subscribe {
+  h4 {
+    margin-bottom: 0;
+  }
+
+  form {
+    label {
+      margin-top: 24px;
+      margin-bottom: 0;
+      position: relative;
+
+      &:before {
+        position: absolute;
+        content: '';
+        top: 10%;
+        left: 14px;
+        width: 2px;
+        height: 80%;
+        background: $gray;
+      }
+    }
+
+    input {
+      width: 100%;
+    }
+
+    input[type='text'] {
+      height: 60px;
+      font-family: $primary-font;
+      font-size: 20px;
+      line-height: 1.6;
+      text-indent: 26px;
+      color: $black;
+      border: none;
+
+      &::placeholder {
+        font-family: $primary-font;
+        font-size: 20px;
+        color: $black;
+      }
+    }
+
+    input[type='submit'] {
+      margin-top: 24px;
+      border: none;
+      height: 48px;
+      font-size: 0.75rem;
+      width: 40%;
+    }
+  }
+}
+
+// COPYRIGHT
+.copyright {
+  background: $dark-black;
+  height: 64px;
+
+  p {
+    margin-bottom: 0;
+    align-self: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .footer-menu {
+    margin-left: 22px;
+  }
+}
+
+//MEDIA
+@media (max-width: $tablet) {
+  .footer-menu {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: $tablet - 1) {
+  .footer {
+    height: auto;
+  }
+
+  .copyright {
+    background: none;
+  }
+}
+
+@media (max-width: $mobile) {
+  .copyright-mobile {
+    width: 70%;
+    text-align: center;
+    line-height: 2.5;
+  }
+
+  .footer {
+    padding-bottom: 40px;
+  }
+}

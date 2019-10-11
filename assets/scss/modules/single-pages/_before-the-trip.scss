@@ -1,0 +1,90 @@
+// HEADER BACKGROUND
+.before-the-trip {
+  &__title {
+    background-image: url("/images/before-the-trip-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (max-width: $mobile - 1) {
+      height: 150px;
+      background-size: cover;
+    }
+  }
+
+  &__article {
+    margin-bottom: 35px;
+
+    &:last-of-type {
+      margin-bottom: -30px;
+    }
+
+    ul {
+      margin: 0;
+      list-style: none;
+
+      ul.before {
+        //li
+        //  margin-bottom: 20px
+
+      }
+    }
+
+    &-header {
+      &--title {
+        font-family: $secondary-font;
+        font-weight: 900;
+        line-height: 0.8;
+        position: relative;
+        color: $black;
+
+        @media (max-width: 736px) {
+          line-height: 1.2;
+          margin-bottom: 15px;
+        }
+
+        &:before {
+          position: absolute;
+          content: "";
+          left: -24px;
+          top: 4px;
+          width: 16px;
+          height: 16px;
+          border-radius: 100%;
+          background-color: $orange;
+        }
+      }
+    }
+
+    &-content {
+      font-family: $primary-font;
+      font-size: 14px;
+      line-height: 1.71;
+      text-align: left;
+      color: #42464f;
+
+      b {
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+// MEDIA
+@media (max-width: $md) {
+  .before-the-trip__article-header--title {
+    text-indent: 1.75rem;
+
+    &:before {
+      left: 0;
+    }
+  }
+}
+
+@media (max-width: $mobile - 1) {
+  .before-the-trip__article-header--title {
+    &:before {
+      top: 9px;
+    }
+  }
+}

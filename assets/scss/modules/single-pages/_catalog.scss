@@ -1,0 +1,170 @@
+.catalogue-padding-top {
+  padding-top: 420px;
+}
+
+.catalogues-list {
+  display: flex;
+  margin: 60px -100px 80px;
+  line-height: 30px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    width: 240px;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 20px 100px 20px;
+
+    a {
+      color: #000;
+      text-decoration: underline;
+    }
+  }
+
+  &__thumb {
+
+    img {
+      max-height: 340px;
+      width: 230px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.catalogue-form {
+
+  label {
+    line-height: 46px;
+    width: 100%;
+    text-align: right;
+    padding-right: 18px;
+
+    @media (max-width: $mobile) {
+      margin-bottom: 0;
+      text-align: left;
+    }
+  }
+
+  input[type="text"] {
+    width: 100%;
+    border: 1px solid #d1d1d1;
+    height: 46px;
+    padding: 5px;
+    margin-bottom: 25px;
+  }
+
+  input[type=checkbox] + label {
+    line-height: 24px;
+    text-align: left;
+    padding: 0 0 0 38px;
+    margin: 0 0 20px;
+
+    &:before {
+      top: 0;
+    }
+  }
+
+  input[type=checkbox]:checked + label {
+    box-shadow: none;
+
+    &:before {
+      border: solid 2px #292c33;
+      border-color: #004c9c;
+      background: #004c9c;
+      color: #fff;
+    }
+  }
+
+  input[type="submit"] {
+    height: 48px;
+    width: 140px;
+    background: #004c9c;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  &__row {
+    display: flex;
+
+    &__descr {
+      width: 200px;
+    }
+
+    &__content {
+      width: calc(100% - 200px);
+    }
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+
+      &__descr {
+        width: 100%;
+      }
+
+      &__content {
+        width: 100%;
+      }
+    }
+  }
+
+  &__addressRow {
+    display: flex;
+
+    & &__postcode,
+    & &__city {
+      display: flex;
+
+      label {
+        width: 200px;
+      }
+
+      input {
+        width: calc(100% - 200px);
+      }
+    }
+
+    & &__postcode {
+      width: 40%;
+    }
+
+    & &__city {
+      width: 60%;
+    }
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+
+      & &__postcode,
+      & &__city {
+        flex-direction: column;
+        width: 100%;
+
+        label {
+          width: 100%;
+        }
+
+        input {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__foot {
+    display: flex;
+
+    &__products,
+    &__submit {
+      width: 50%;
+    }
+
+    &__products {
+
+    }
+
+    &__submit {
+      text-align: right;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.boka-4__pay, .boka-4__send, .boka-4__save {
+  i {
+    font-size: 22px;
+  }
+}
+
+.boka-4__btn {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.33;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  min-width: 205px;
+}
+
+.boka-4__table {
+  line-height: 1.9;
+
+  td:first-of-type {
+    padding-right: 3rem;
+  }
+}
+
+@media (max-width: $mobile) {
+  .boka-4__table {
+    td:first-of-type {
+      padding-right: 1rem;
+    }
+  }
+}

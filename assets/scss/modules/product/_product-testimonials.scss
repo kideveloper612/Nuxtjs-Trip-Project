@@ -1,0 +1,142 @@
+.product__testimonials-summary {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 35px 50px 25px;
+  margin: 0 -30px 50px;
+
+  h4 {
+    font-size: 72px;
+    font-family: $primary-font;
+    line-height: 1;
+    margin-bottom: 14px;
+
+    small {
+      font-size: 42px;
+      vertical-align: top;
+      font-weight: 700;
+
+      @media (max-width: $xxl - 1) {
+        font-size: 34px;
+      }
+    }
+  }
+
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  &__overview {
+    width: 30%;
+  }
+
+  &__overview-stars {
+    display: flex;
+    margin-bottom: 20px;
+
+    img {
+      height: 28px;
+      margin: 0 3px;
+    }
+  }
+
+  &__ratings-chart {
+    padding-right: 8%;
+  }
+
+  &__ratings-item {
+    display: flex;
+    margin: 14px 0;
+    line-height: 28px;
+
+    &__bar {
+      display: block;
+      position: relative;
+      width: 316px;
+      height: 28px;
+      background: #fff;
+      margin: 0 12px;
+
+      &__score {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: #004a9d;
+      }
+    }
+  }
+}
+
+.product__testimonials {
+
+  &__item {
+    display: flex;
+    padding: 40px 30px 60px;
+    margin: 0 -30px;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
+
+    &:nth-child(even) {
+      background: #f7f7f7;
+    }
+  }
+
+  &__stars {
+    display: flex;
+    padding-top: 5px;
+    width: 120px;
+
+    img {
+      height: 15px;
+      margin: 0 2px;
+    }
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__content {
+    width: calc(100% - 120px);
+
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
+  }
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+
+    @media (max-width: $mobile) {
+      font-size: 14px;
+    }
+
+    strong {
+      font-size: 24px;
+      font-weight: 900;
+
+      @media (max-width: $mobile) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__comment {
+    line-height: 20px;
+  }
+}
+
+.product__testimonials__pagination {
+  margin: 70px 0;
+}

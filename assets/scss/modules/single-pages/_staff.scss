@@ -1,0 +1,103 @@
+.staff-content {
+  font-size: 18px;
+  padding-right: 60px;
+
+  @media (max-width: $tablet) {
+    padding-right: 15px;
+    margin-top: 40px;
+  }
+
+  &__row {
+    @media (max-width: $tablet) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__with_image {
+
+  }
+}
+
+.staff-description {
+  margin-bottom: 50px;
+}
+
+.staff-calendar {
+
+  h2 {
+    font-family: $secondary-font;
+    font-size: 25px;
+    font-weight: 900;
+  }
+}
+
+.staff-calendar-table {
+  width: 100%;
+
+  tr {
+    border-bottom: 1px solid #f8f8f8;
+
+    &:first-child {
+      border: 0;
+    }
+  }
+
+  th {
+    font-size: 12px;
+    padding: 18px 0;
+  }
+
+  td {
+    padding: 5px 0;
+  }
+}
+
+.staff-reviews {
+  margin: 90px 0 40px;
+
+  h2 {
+    font-family: $secondary-font;
+    font-size: 25px;
+    font-weight: 900;
+  }
+
+  &__list {
+    font-family: $secondary-font;
+    font-size: 18px;
+    font-weight: 400;
+
+    li {
+      padding: 20px 25px;
+      margin: 0 -25px;
+
+      &:nth-child(even) {
+        background-color: #f7f7f7;
+      }
+
+      p {
+        font-family: $secondary-font;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.2;
+        margin: 0;
+      }
+    }
+
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      line-height: 1.2;
+      margin-bottom: 10px;
+
+      strong {
+        font-family: $secondary-font;
+        font-size: 20px;
+        font-weight: 900;
+      }
+
+      span {
+
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.gen-info-head-bg {
+  background: url(../images/gen-info-head-bg.png) no-repeat (center / cover);
+
+  @media (max-width: $mobile - 1) {
+    height: 150px;
+  }
+}
+
+// CONTENT
+.gen-info-content {
+  h2 {
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
+
+  p {
+    @media (max-width: $mobile - 1) {
+      margin-left: -20px;
+    }
+  }
+}

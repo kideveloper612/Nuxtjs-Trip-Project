@@ -1,0 +1,154 @@
+// CONTENT
+.ansultning-content {
+
+  .features {
+    display: none !important;
+
+    @media (max-width: $mobile - 1) {
+      display: flex !important;
+      padding: 8px 0 22px 0;
+      border-bottom: 1px solid $gray;
+      margin-bottom: 18px;
+    }
+  }
+
+  h4 {
+    @media (max-width: $mobile - 1) {
+      font-size: 20px;
+      font-weight: 900;
+      line-height: 1.2;
+      text-align: left;
+      color: $black;
+    }
+  }
+
+  ul {
+    font-size: 20px;
+
+    li {
+      line-height: 2.4;
+
+      @media (max-width: $mobile - 1) {
+        font-size: 16px;
+        line-height: 1.5;
+        color: $black;
+      }
+    }
+  }
+
+  p {
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+
+    @media (max-width: $mobile - 1) {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    &:not(:first-of-type):last-of-type {
+      @media (max-width: $mobile - 1) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__section {
+    margin-bottom: 80px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: $mobile - 1) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+//TABLE
+.ansultning-table-3-col {
+  width: 100%;
+  font-weight: 500;
+
+  thead {
+    td {
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 1.33;
+      letter-spacing: 1px;
+      padding-left: 1rem;
+
+      @extend .transform-uppercase;
+
+      @media (max-width: $mobile - 1) {
+        padding-left: 0;
+      }
+    }
+  }
+
+  td {
+    height: 56px;
+    border-bottom: 1px solid $table-border-color;
+    font-size: 14px;
+
+    @media (max-width: $mobile - 1) {
+      height: 40px;
+    }
+
+    &:nth-child(1) {
+      width: 60%;
+
+      @media (max-width: $mobile - 1) {
+        width: 50%;
+      }
+    }
+
+    &:nth-child(2) {
+      color: $blue;
+      width: 20%;
+    }
+
+    &:nth-child(3) {
+      color: $orange;
+      width: 20%;
+      text-align: right;
+    }
+  }
+}
+
+.ansultning-table-2-col {
+  width: 100%;
+  font-weight: 500;
+
+  td {
+    height: 56px;
+    border-bottom: 1px solid $table-border-color;
+    font-size: 14px;
+    width: 50%;
+
+    @media (max-width: $mobile - 1) {
+      height: 40px;
+    }
+
+    &:nth-child(2) {
+      color: $orange;
+      text-align: right;
+      padding-right: 1rem;
+    }
+  }
+}
+
+// MEDIA
+@media (max-width: $tablet - 1) {
+  .ansultning-content__section .blue-span-list {
+    margin-bottom: 0;
+  }
+}
+
+//.mt
+//  h4
+//    @media (max-width: $mobile - 1 )
+//      margin-top: 20px
+// //p:last-of-type
+// //  @media (max-width: $mobile - 1 )
+// //    margin-bottom: 0

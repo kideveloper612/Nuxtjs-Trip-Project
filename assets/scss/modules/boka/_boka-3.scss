@@ -1,0 +1,19 @@
+// TABLE
+.boka-table {
+  td, th {
+    min-height: 56px;
+    vertical-align: middle;
+
+    &:last-of-type {
+      text-align: right;
+      white-space: nowrap;
+    }
+  }
+}
+
+.boka-table-word-break {
+  td:last-of-type {
+    word-break: break-word;
+    padding-left: 6px;
+  }
+}

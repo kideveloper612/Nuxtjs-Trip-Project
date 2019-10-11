@@ -1,0 +1,16 @@
+.map-header {
+  z-index: 1;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: $mobile - 1) {
+  .map {
+    .articles-content {
+      padding-top: 0;
+    }
+  }
+}

@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "RolfsBuss";
+  src: url("../fonts/RolfsBuss.eot?wfntjv");
+  src: url("../fonts/RolfsBuss.eot?wfntjv#iefix") format("embedded-opentype"), url("../fonts/RolfsBuss.ttf?wfntjv") format("truetype"), url("../fonts/RolfsBuss.woff?wfntjv") format("woff"), url("../fonts/RolfsBuss.svg?wfntjv#RolfsBuss") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  display: inline-block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "RolfsBuss" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-credit-card:before {
+  content: "";
+  color: #004b9c;
+}
+
+.icon-information:before {
+  content: "";
+  color: #004b9c;
+}
+
+.icon-letter:before {
+  content: "";
+  color: #004b9c;
+}
+
+.icon-mailbox:before {
+  content: "";
+  color: #004b9c;
+}
+
+.icon-people:before {
+  content: "";
+  color: #004b9c;
+}
+
+.icon-wallet:before {
+  content: "";
+  color: #004b9c;
+}
+
+.icon-cross:before {
+  content: "";
+}
+
+.icon-nav:before {
+  content: "";
+  color: #fff;
+}
+
+.icon-chevron-right:before {
+  content: "";
+}
+
+.icon-arrow-left:before {
+  content: "";
+}
+
+.icon-arrow-right:before {
+  content: "";
+}
+
+.icon-calendar-default:before {
+  content: "";
+}
+
+.icon-cards-default:before {
+  content: "";
+}
+
+.icon-checkbox .path1:before {
+  content: "";
+  color: rgb(255, 255, 255);
+}
+
+.icon-checkbox .path2:before {
+  content: "";
+  margin-left: -1em;
+  color: rgb(98, 179, 18);
+}
+
+.icon-chevrondown:before {
+  content: "";
+}
+
+.icon-fb:before {
+  content: "";
+}
+
+.icon-instagram:before {
+  content: "";
+}
+
+.icon-list-default:before {
+  content: "";
+}
+
+.icon-pinterest:before {
+  content: "";
+}
+
+.icon-search:before {
+  content: "";
+}
+
+.icon-star:before {
+  content: "";
+}
+
+.icon-world:before {
+  content: "";
+}
+
+.icon-youtube:before {
+  content: "";
+}
+
+.icon-arrow-left-big:before {
+  content: "";
+}
+
+.icon-clock:before {
+  content: "";
+}
+
+.icon-info-circle:before {
+  content: "";
+}
+
+.icon-info-square:before {
+  content: "";
+}
+
+.icon-ingar:before {
+  content: "";
+}
+
+.icon-reservat:before {
+  content: "";
+}
+
+.icon-share:before {
+  content: "";
+}
+
+.icon-star-stroke:before {
+  content: "";
+}
+
+.icon-trillag:before {
+  content: "";
+}

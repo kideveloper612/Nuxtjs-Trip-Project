@@ -1,0 +1,69 @@
+// GENERAL
+@import "modules/variables";
+@import "modules/mixins";
+@import "modules/fonts";
+@import "modules/general";
+
+// MODULES
+// HEADER
+@import "modules/header";
+
+// MOBILE MENU
+@import "modules/side-menu";
+@import "modules/mobile-menu";
+
+// MAIN PAGE
+@import "modules/main-page/top-section";
+@import "modules/main-page/stay-with-us";
+@import "modules/main-page/booking";
+@import "modules/main-page/instagram-section";
+
+// PRODUCT
+@import "modules/product/product-reusables";
+@import "modules/product/product-general";
+@import "modules/product/product-description";
+@import "modules/product/product-details";
+@import "modules/product/product-testimonials";
+@import "modules/product/product-video";
+@import "modules/product/product-hotel-list";
+@import "modules/product/product-hotel-single";
+@import "modules/product/product-table-and-tabs";
+
+// SINGLE PAGES
+@import "modules/single-pages/general-information";
+@import "modules/single-pages/before-the-trip";
+@import "modules/single-pages/history";
+@import "modules/single-pages/available-positions";
+@import "modules/single-pages/newsletter";
+@import "modules/single-pages/check-booking";
+@import "modules/single-pages/insurance";
+@import "modules/single-pages/map";
+@import "modules/single-pages/calendar";
+@import "modules/single-pages/kataloger";
+@import "modules/single-pages/ansultning";
+@import "modules/single-pages/testimonials-write";
+@import "modules/single-pages/staff";
+@import "modules/single-pages/last-minute";
+@import "modules/single-pages/catalog";
+@import "modules/single-pages/worldmap";
+
+// CATEGORY
+@import "modules/category/category-calendar";
+@import "modules/category/category-list";
+@import "modules/category/category-grid";
+
+// BOKA
+@import "modules/boka/boka-1";
+@import "modules/boka/boka-2";
+@import "modules/boka/boka-3";
+@import "modules/boka/boka-4";
+@import "modules/boka/boka-5";
+
+// OTHER
+@import "modules/art-flex-table";
+
+// FOOTER
+@import "modules/footer";
+
+// SEARCHRESULT
+@import "modules/searchresult";

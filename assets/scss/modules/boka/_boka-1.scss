@@ -1,0 +1,237 @@
+.boka1-top-section {
+  @media (max-width: $mobile - 1) {
+    padding-bottom: 40px;
+    padding-left: 24px;
+  }
+}
+
+.boka2-top-section {
+  @media (max-width: $mobile - 1) {
+    padding-bottom: 40px;
+  }
+}
+
+// CONTENT
+.boka-content {
+  font-weight: 500;
+
+  h5 {
+    @media (max-width: $mobile - 1) {
+      margin-top: 35px !important;
+      margin-bottom: 5px;
+    }
+  }
+
+  h5.resenar {
+    @media (max-width: $mobile - 1) {}
+
+    margin-top: 22px !important;
+    margin-bottom: 18px;
+  }
+
+  label.boka1-art-select:first-of-type {
+    @media (max-width: $mobile - 1) {
+      margin-top: 12px;
+    }
+  }
+
+  hr {
+    @media (max-width: $mobile - 1) {
+      margin-bottom: 0;
+    }
+  }
+
+  button {
+    @media (max-width: $mobile - 1) {
+      margin-top: 35px !important;
+      float: right;
+      width: 180px;
+      height: 52px;
+    }
+  }
+}
+
+// STEPS
+.boka-steps {
+  //display: flex
+  //align-items: center
+  //justify-content: space-between
+  display: block;
+  position: relative;
+  width: 100%;
+
+  //@media (max-width: $mobile - 1 )
+  //  flex-direction: column
+  //  align-items: flex-start
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: $table-border-color;
+
+    @media (max-width: $mobile - 1) {
+      width: 2px;
+      height: 95%;
+      top: 5px;
+      left: 7px;
+    }
+  }
+}
+
+.boka-step {
+  display: inline-block;
+  padding-top: 26px;
+  position: relative;
+  font-size: 19px;
+  line-height: 1.26;
+
+  @media (max-width: $mobile - 1) {
+    padding-top: 55px;
+    padding-left: 38px;
+  }
+
+  &:first-of-type {
+    @media (max-width: $mobile - 1) {
+      padding-top: 0;
+    }
+  }
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 1px solid $table-border-color;
+    border-radius: 100%;
+    background: $white;
+    z-index: 1;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: $table-border-color;
+    z-index: 2;
+  }
+}
+
+.boka-step__active {
+  color: $blue;
+
+  &:before {
+    border: 1px solid #004b9c;
+    background: $white;
+  }
+
+  &:after {
+    background: #004b9c;
+  }
+}
+
+.boka-step-1 {
+  &:before {
+    top: -7px;
+    left: 0;
+
+    @media (max-width: $mobile - 1) {
+      top: 3px;
+    }
+  }
+
+  &:after {
+    top: -7px;
+    left: 0;
+    transform: translateX(50%) translateY(50%);
+
+    @media (max-width: $mobile - 1) {
+      top: 3px;
+    }
+  }
+}
+
+.boka-step-2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &:before {
+    top: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (max-width: $mobile - 1) {
+      top: 58px;
+      left: 8px;
+    }
+  }
+
+  &:after {
+    top: -7px;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+
+    @media (max-width: $mobile - 1) {
+      top: 58px;
+      left: 8px;
+    }
+  }
+}
+
+.boka-step-3 {
+  position: absolute;
+  right: 0;
+
+  &:before {
+    top: -7px;
+    right: 0;
+
+    @media (max-width: $mobile - 1) {
+      top: 60px;
+      left: 0;
+    }
+  }
+
+  &:after {
+    top: -7px;
+    right: 0;
+    transform: translateX(-50%) translateY(50%);
+
+    @media (max-width: $mobile - 1) {
+      top: 60px;
+      left: 8px;
+    }
+  }
+}
+
+// MEDIA
+@media (max-width: $mobile - 1) {
+  .boka-title {
+    height: auto;
+    position: relative;
+    padding: 30px 0;
+
+    h3 {
+      margin-top: 15px;
+    }
+  }
+
+  .boka-steps {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .boka-step-2, .boka-step-3 {
+    position: relative;
+    left: 0;
+    transform: none;
+  }
+}

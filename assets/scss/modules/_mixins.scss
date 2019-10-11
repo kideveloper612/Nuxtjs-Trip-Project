@@ -1,0 +1,14 @@
+@mixin column($width, $col-count, $col-gap, $rule) {
+  -webkit-column-width: $width;
+  -moz-column-width: $width;
+  column-width: $width;
+  -webkit-column-count: $col-count;
+  -moz-column-count: $col-count;
+  column-count: $col-count;
+  -webkit-column-gap: $col-gap;
+  -moz-column-gap: $col-gap;
+  column-gap: $col-gap;
+  -webkit-column-rule: $rule;
+  -moz-column-rule: $rule;
+  column-rule: $rule;
+}

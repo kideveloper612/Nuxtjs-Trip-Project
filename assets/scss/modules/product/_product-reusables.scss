@@ -1,0 +1,67 @@
+.product-graybox {
+  display: flex;
+  align-items: center;
+  background: #f7f7f7;
+  padding: 20px 20% 20px 0;
+  width: calc(100% + 30px);
+  margin: 0 -15px 50px;
+
+  &__ico {
+    height: 48px;
+    margin: 0 50px;
+  }
+
+  h3,
+  p {
+    font-family: $primary-font;
+
+  }
+
+  h3 {
+    margin: 10px 0 20px;
+    font-weight: 900;
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+    margin: 20px 0 10px;
+  }
+
+  &__radios {
+    input[type=radio] {
+      opacity: 1;
+
+      & + label {
+        padding: 4px 8px 4px 24px;
+        line-height: 1;
+        margin-right: 24px;
+
+        &:before {
+          opacity: 1;
+          width: 16px;
+          height: 16px;
+          border-radius: 9999px;
+          border: solid 2px #a3a3a3;
+        }
+      }
+
+      &:checked {
+        opacity: 1;
+        & + label {
+          padding: 4px 8px 4px 24px;
+          line-height: 1;
+          box-shadow: none;
+
+          &:before {
+            content: ' ';
+            width: 16px;
+            height: 16px;
+            top: 4px;
+            border: solid 4px #1B469E;
+          }
+        }
+      }
+    }
+  }
+}
